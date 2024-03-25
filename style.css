@@ -1,0 +1,310 @@
+@font-face {
+    font-family: GT-Flexa;
+    src: url(fonts/GT-Flexa-Extended-Black-Italic-Trial.otf);
+}
+
+@font-face {
+    font-family: Repro-Regular;
+    src: url(fonts/ABCReproVariable-Trial.ttf);
+}
+
+@font-face {
+    font-family: Repro-Bold;
+    src: url(fonts/ABCRepro-Bold-Trial.otf);
+}
+
+:root {
+    --box: 38px;
+}
+
+html {
+    font-size: 25px;
+}
+
+body {
+    background-color: ghostwhite;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 13vw 3.5vw 10vh 5vw;
+    gap: 3vw 1.5vw;
+    z-index: 1;
+}
+
+.alaska,
+.chamonix,
+.holland,
+.htstation,
+.iceland,
+.japan,
+.lasvegas,
+.melbourne,
+.newzeland,
+.paris,
+.singapore,
+.tibet {
+    background-color: gainsboro;
+    padding: 18px;
+    transition: 1.2s;
+    border: 4px rgba(0,0,0,0) dotted;
+    border-radius: 8px;
+}
+
+.alaska:hover,
+.chamonix:hover,
+.holland:hover,
+.htstation:hover,
+.iceland:hover,
+.japan:hover,
+.lasvegas:hover,
+.melbourne:hover,
+.newzeland:hover,
+.paris:hover,
+.singapore:hover,
+.tibet:hover {
+    border: 4px black dotted;
+    transition: 0.8s;
+    border-radius: 25px;
+}
+
+.box-alaska,
+.box-chamonix,
+.box-holland,
+.box-htstation,
+.box-iceland,
+.box-japan,
+.box-lasvegas,
+.box-melbourne,
+.box-newzeland,
+.box-paris,
+.box-singapore,
+.box-tibet {
+    padding: 20px;
+    background-color: white;
+    border: 2px gainsboro solid;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.box-alaska:hover,
+.box-chamonix:hover,
+.box-holland:hover,
+.box-htstation:hover,
+.box-iceland:hover,
+.box-japan:hover,
+.box-lasvegas:hover,
+.box-melbourne:hover,
+.box-newzeland:hover,
+.box-paris:hover,
+.box-singapore:hover,
+.box-tibet:hover {
+    box-shadow: gainsboro 0px 0 25px 13px;
+    transition: 0.5s;
+}
+
+header {
+    background-image: linear-gradient(ghostwhite, rgba(0,0,0,0));
+    z-index: 2;
+    position: fixed;
+    width: 100vw;
+    height: 14vw;
+    top:0;
+}
+
+h1 {
+    font-family: "GT-Flexa";
+    font-size: clamp(3.4rem, 10vw, 8rem);
+    line-height: 7rem;
+    margin-left: 5vw;
+}
+
+h3 {
+    font-family: "Repro-Bold";
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+p {
+    font-family: "Repro-Regular";
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    margin-bottom: 0.8vw;
+}
+
+.tags span {
+    font-family: "Repro-Regular";
+    font-feature-settings: "ss16";
+    font-size: 0.9rem;
+    line-height: 0.7rem;
+    margin-left: -0.1rem;
+}
+
+.text {
+
+    height: 120px;
+    margin-top: 20px;
+}
+
+.box-alaska {
+    width: calc(var(--box) * 9.8 + 40px);
+
+}
+
+.alaska {
+    width: calc(var(--box) * 9.8);
+    height: calc(var(--box) * 8.8);
+}
+
+.box-chamonix {
+    width: calc(var(--box) * 9.7 + 40px);
+    height: calc(120px + 60px + (var(--box) * 4.5));
+}
+
+.chamonix {
+    width: calc(var(--box) * 9.7);
+    height: calc(var(--box) * 4.5);
+}
+
+.chamonix img{
+    width: calc(var(--box) * 9.7 - var(--box));
+}
+
+.box-holland {
+    width: calc(var(--box) * 5.4 + 40px);
+    height: calc(120px + 60px + (var(--box) * 8.3));
+}
+
+.holland {
+    width: calc(var(--box) * 5.4);
+    height: calc(var(--box) * 8.3);
+}
+
+.box-htstation {
+    width: calc(var(--box) * 5 + 40px);
+    height: calc(120px + 60px + (var(--box) * 8));
+}
+
+.htstation {
+    width: calc(var(--box) * 5);
+    height: calc(var(--box) * 8);
+}
+
+.htstation img{
+    height: calc(var(--box) * 8 - var(--box));
+}
+
+.box-iceland {
+    width: calc(var(--box) * 8.6 + 40px);
+    height: calc(120px + 60px + (var(--box) * 6));
+}
+
+.iceland {
+    width: calc(var(--box) * 8.6);
+    height: calc(var(--box) * 6);
+}
+
+.iceland img{
+    width: calc(var(--box) * 8.6 - var(--box));
+}
+
+.box-japan {
+    width: calc(var(--box) * 9.9 + 40px);
+    height: calc(120px + 60px + (var(--box) * 6.4));
+}
+
+.japan {
+    width: calc(var(--box) * 9.9);
+    height: calc(var(--box) * 6.4);
+}
+
+.japan img{
+    width: calc(var(--box) * 9.9 - var(--box));
+}
+
+.box-lasvegas {
+    width: calc(var(--box) * 5.5 + 40px);
+    height: calc(120px + 60px + (var(--box) * 4.5));
+}
+
+.lasvegas {
+    width: calc(var(--box) * 5.5);
+    height: calc(var(--box) * 4.5);
+}
+
+.lasvegas img{
+    height: calc(var(--box) * 4.5 - var(--box));
+}
+
+.box-melbourne {
+    width: calc(var(--box) * 7.4 + 40px);
+    height: calc(120px + 60px + (var(--box) * 7.4));
+}
+
+.melbourne {
+    width: calc(var(--box) * 7.4);
+    height: calc(var(--box) * 7.4);
+}
+
+.melbourne img{
+    height: calc(var(--box) * 7.4 - var(--box));
+}
+
+.box-newzeland {
+    width: calc(var(--box) * 7.8 + 40px);
+    height: calc(120px + 60px + (var(--box) * 5.3));
+}
+
+.newzeland {
+    width: calc(var(--box) * 7.8);
+    height: calc(var(--box) * 5.3);
+}
+
+.newzeland img{
+    width: calc(var(--box) * 7.8 - var(--box));
+}
+
+.box-paris {
+    width: calc(var(--box) * 7.4 + 40px);
+    height: calc(120px + 60px + (var(--box) * 5.6));
+}
+
+.paris {
+    width: calc(var(--box) * 7.4);
+    height: calc(var(--box) * 5.6);
+}
+
+.paris img{
+    width: calc(var(--box) * 7.4 - var(--box));
+}
+
+.box-singapore {
+    width: calc(var(--box) * 6 + 40px);
+    height: calc(120px + 60px + (var(--box) * 6));
+}
+
+.singapore {
+    width: calc(var(--box) * 6);
+    height: calc(var(--box) * 6);
+}
+
+.singapore img{
+    width: calc(var(--box) * 6 - var(--box));
+}
+
+.box-tibet {
+    width: calc(var(--box) * 7 + 40px);
+    height: calc(120px + 60px + (var(--box) * 5.3));
+}
+
+.tibet {
+    width: calc(var(--box) * 7);
+    height: calc(var(--box) * 5.3);
+}
+
+.tibet img{
+    width: calc(var(--box) * 7 - var(--box));
+}
