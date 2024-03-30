@@ -38,7 +38,7 @@ function scrollToPage(pageIndex){
 function scrollTimer(){
     setTimeout(() => {
         pageScroll=true;
-    }, 500);
+    }, 900);
 }
 // 鼠标滚轮事件
 function mouseWheel(e){
