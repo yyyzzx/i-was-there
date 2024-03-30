@@ -195,3 +195,22 @@ oMain7.addEventListener('mousemove', e => {
     oZoomImg7.style.left = -zoomImgLeft * 15 - 320 + 'px';
     oZoomImg7.style.top = -zoomImgTop * 15 - 100 + 'px';
 });
+
+//8-Melbourne
+let oMain8 = document.querySelector('#main8');
+let oMirror8 = document.querySelector('#mirror8');
+let oZoomImg8 = document.querySelector('#mirror8 img');
+
+oMain8.addEventListener('mousemove', e => {
+    let x_left = e.clientX - oMain8.offsetLeft;
+    let y_top = e.clientY - oMain8.offsetTop;
+
+    oMirror8.style.left = x_left - oMirror8.offsetWidth / 2 + 'px';
+    oMirror8.style.top = y_top - oMirror8.offsetHeight * 1.8 + 'px';
+
+    let zoomImgLeft = (oZoomImg.offsetWidth / oMain8.offsetWidth) * (e.clientX - oMain8.getBoundingClientRect().left) - (oMirror8.offsetWidth / 2);
+    let zoomImgTop = (oZoomImg.offsetHeight / oMain8.offsetHeight) * (e.clientY - oMain8.getBoundingClientRect().top) - (oMirror8.offsetHeight / 2);
+
+    oZoomImg8.style.left = -zoomImgLeft * 15 - 320 + 'px';
+    oZoomImg8.style.top = -zoomImgTop * 15 - 100 + 'px';
+});

@@ -27,7 +27,9 @@
     --japan-b: brown;
     --japan-f: whitesmoke;
     --lasvegas-b: rgb(40, 40, 149);
-    --lasvegas-f: lightgrey;
+    --lasvegas-f: #dadce9;
+    --melbourne-b: #152a65;
+    --melbourne-f: #c7c1c7;
 }
 
 html {
@@ -81,6 +83,10 @@ body {
 
 #lasvegas {
     background-color: var(--lasvegas-b);
+}
+
+#melbourne {
+    background-color: var(--melbourne-b);
 }
 
 .header {
@@ -175,6 +181,10 @@ h1 {
 
 #main7, #mirror7 img {
     background-color: var(--lasvegas-f);
+}
+
+#main8, #mirror8 img {
+    background-color: var(--melbourne-f);
 }
 
 .main img {
