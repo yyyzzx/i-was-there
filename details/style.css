@@ -20,6 +20,8 @@
     --chamonix-f: #eff2d1;
     --holland-b: #fd5c22;
     --holland-f: #efddcd;
+    --houtong-b: #813d2e;
+    --houtong-f: rgb(245, 242, 228);
 }
 
 html {
@@ -59,8 +61,8 @@ body {
     background-color: var(--holland-b);
 }
 
-.box:nth-child(4){
-    background-color: burlywood;
+#houtong {
+    background-color: var(--houtong-b);
 }
 
 .box:nth-child(5){
@@ -87,6 +89,7 @@ h1 {
     width: 88vw;
     height: 1.3rem;
     margin: 0 5vw;
+    margin-top: 0.5rem;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -141,7 +144,11 @@ h1 {
 }
 
 #main3, #mirror3 img {
-    background-color: #efddcd;
+    background-color: var(--holland-f)
+}
+
+#main4, #mirror4 img {
+    background-color: var(--houtong-f);
 }
 
 .main img {
@@ -166,9 +173,14 @@ h1 {
     border: 5px black dotted;
 }
 
-.mirror img{
+.mirror img {
     position: absolute;
     transform: scale(20);
+}
+
+#mirror3 img, #mirror4 img {
+    position: absolute;
+    transform: scale(13);
 }
 
 .text {

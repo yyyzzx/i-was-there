@@ -15,6 +15,9 @@
 
 :root {
     --box: 38px;
+    --alaska-f: Gainsboro;
+    --chamonix-f: #eff2d1;
+    --holland-f: #efddcd;
 }
 
 html {
@@ -171,7 +174,7 @@ p {
 }
 
 .alaska:hover{
-    background-color: whitesmoke;
+    background-color: var(--alaska-f);
 }
 
 .box-chamonix {
@@ -189,7 +192,7 @@ p {
 }
 
 .chamonix:hover {
-    background-color: #eff2d1;
+    background-color: var(--chamonix-f);
 }
 
 .box-holland {
@@ -201,6 +204,11 @@ p {
     width: calc(var(--box) * 5.4);
     height: calc(var(--box) * 8.3);
 }
+
+.holland:hover {
+    background-color: var(--holland-f);
+}
+
 
 .box-htstation {
     width: calc(var(--box) * 5 + 40px);

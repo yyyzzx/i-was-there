@@ -100,3 +100,41 @@ oMain2.addEventListener('mousemove', e => {
     oZoomImg2.style.left = -zoomImgLeft * 15 - 320 + 'px';
     oZoomImg2.style.top = -zoomImgTop * 15 - 100 + 'px';
 });
+
+//3-Holland
+let oMain3 = document.querySelector('#main3');
+let oMirror3 = document.querySelector('#mirror3');
+let oZoomImg3 = document.querySelector('#mirror3 img');
+
+oMain3.addEventListener('mousemove', e => {
+    let x_left = e.clientX - oMain3.offsetLeft;
+    let y_top = e.clientY - oMain3.offsetTop;
+
+    oMirror3.style.left = x_left - oMirror3.offsetWidth / 2 + 'px';
+    oMirror3.style.top = y_top - oMirror3.offsetHeight * 1.8 + 'px';
+
+    let zoomImgLeft = (oZoomImg.offsetWidth / oMain3.offsetWidth) * (e.clientX - oMain3.getBoundingClientRect().left) - (oMirror3.offsetWidth / 2);
+    let zoomImgTop = (oZoomImg.offsetHeight / oMain3.offsetHeight) * (e.clientY - oMain3.getBoundingClientRect().top) - (oMirror3.offsetHeight / 2);
+
+    oZoomImg3.style.left = -zoomImgLeft * 15 - 320 + 'px';
+    oZoomImg3.style.top = -zoomImgTop * 15 - 100 + 'px';
+});
+
+//4-Houtong
+let oMain4 = document.querySelector('#main4');
+let oMirror4 = document.querySelector('#mirror4');
+let oZoomImg4 = document.querySelector('#mirror4 img');
+
+oMain4.addEventListener('mousemove', e => {
+    let x_left = e.clientX - oMain4.offsetLeft;
+    let y_top = e.clientY - oMain4.offsetTop;
+
+    oMirror4.style.left = x_left - oMirror4.offsetWidth / 2 + 'px';
+    oMirror4.style.top = y_top - oMirror4.offsetHeight * 1.8 + 'px';
+
+    let zoomImgLeft = (oZoomImg.offsetWidth / oMain4.offsetWidth) * (e.clientX - oMain4.getBoundingClientRect().left) - (oMirror4.offsetWidth / 2);
+    let zoomImgTop = (oZoomImg.offsetHeight / oMain4.offsetHeight) * (e.clientY - oMain4.getBoundingClientRect().top) - (oMirror4.offsetHeight / 2);
+
+    oZoomImg4.style.left = -zoomImgLeft * 15 - 320 + 'px';
+    oZoomImg4.style.top = -zoomImgTop * 15 - 100 + 'px';
+});
