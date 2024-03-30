@@ -170,6 +170,10 @@ p {
     height: calc(var(--box) * 8.8);
 }
 
+.alaska:hover{
+    background-color: whitesmoke;
+}
+
 .box-chamonix {
     width: calc(var(--box) * 9.7 + 40px);
     height: calc(120px + 60px + (var(--box) * 4.5));
@@ -182,6 +186,10 @@ p {
 
 .chamonix img{
     width: calc(var(--box) * 9.7 - var(--box));
+}
+
+.chamonix:hover {
+    background-color: #eff2d1;
 }
 
 .box-holland {
