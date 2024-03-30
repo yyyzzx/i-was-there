@@ -18,6 +18,9 @@
     --alaska-f: Gainsboro;
     --chamonix-f: #eff2d1;
     --holland-f: #efddcd;
+    --houtong-f: rgb(245, 242, 228);
+    --iceland-f: mistyrose;
+    --japan-f: whitesmoke;
 }
 
 html {
@@ -209,7 +212,6 @@ p {
     background-color: var(--holland-f);
 }
 
-
 .box-htstation {
     width: calc(var(--box) * 5 + 40px);
     height: calc(120px + 60px + (var(--box) * 8));
@@ -222,6 +224,10 @@ p {
 
 .htstation img{
     height: calc(var(--box) * 8 - var(--box));
+}
+
+.htstation:hover {
+    background-color: var(--houtong-f);
 }
 
 .box-iceland {
@@ -238,6 +244,10 @@ p {
     width: calc(var(--box) * 8.6 - var(--box));
 }
 
+.iceland:hover {
+    background-color: var(--iceland-f);
+}
+
 .box-japan {
     width: calc(var(--box) * 9.9 + 40px);
     height: calc(120px + 60px + (var(--box) * 6.4));
@@ -250,6 +260,10 @@ p {
 
 .japan img{
     width: calc(var(--box) * 9.9 - var(--box));
+}
+
+.japan:hover {
+    background-color: var(--japan-f);
 }
 
 .box-lasvegas {

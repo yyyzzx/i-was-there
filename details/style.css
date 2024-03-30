@@ -24,6 +24,10 @@
     --houtong-f: rgb(245, 242, 228);
     --iceland-b: rgb(199, 126, 153);
     --iceland-f: mistyrose;
+    --japan-b: brown;
+    --japan-f: whitesmoke;
+    --lasvegas-b: rgb(40, 40, 149);
+    --lasvegas-f: lightgrey;
 }
 
 html {
@@ -71,8 +75,12 @@ body {
     background-color: var(--iceland-b);
 }
 
-.box:nth-child(5){
-    background-color: peachpuff;
+#japan {
+    background-color: var(--japan-b);
+}
+
+#lasvegas {
+    background-color: var(--lasvegas-b);
 }
 
 .header {
@@ -159,6 +167,14 @@ h1 {
 
 #main5, #mirror5 img {
     background-color: var(--iceland-f);
+}
+
+#main6, #mirror6 img {
+    background-color: var(--japan-f);
+}
+
+#main7, #mirror7 img {
+    background-color: var(--lasvegas-f);
 }
 
 .main img {

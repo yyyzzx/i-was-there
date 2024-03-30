@@ -138,3 +138,60 @@ oMain4.addEventListener('mousemove', e => {
     oZoomImg4.style.left = -zoomImgLeft * 15 - 320 + 'px';
     oZoomImg4.style.top = -zoomImgTop * 15 - 100 + 'px';
 });
+
+//5-Iceland
+let oMain5 = document.querySelector('#main5');
+let oMirror5 = document.querySelector('#mirror5');
+let oZoomImg5 = document.querySelector('#mirror5 img');
+
+oMain5.addEventListener('mousemove', e => {
+    let x_left = e.clientX - oMain5.offsetLeft;
+    let y_top = e.clientY - oMain5.offsetTop;
+
+    oMirror5.style.left = x_left - oMirror5.offsetWidth / 2 + 'px';
+    oMirror5.style.top = y_top - oMirror5.offsetHeight * 1.8 + 'px';
+
+    let zoomImgLeft = (oZoomImg.offsetWidth / oMain5.offsetWidth) * (e.clientX - oMain5.getBoundingClientRect().left) - (oMirror5.offsetWidth / 2);
+    let zoomImgTop = (oZoomImg.offsetHeight / oMain5.offsetHeight) * (e.clientY - oMain5.getBoundingClientRect().top) - (oMirror5.offsetHeight / 2);
+
+    oZoomImg5.style.left = -zoomImgLeft * 15 - 320 + 'px';
+    oZoomImg5.style.top = -zoomImgTop * 15 - 100 + 'px';
+});
+
+//6-Japan
+let oMain6 = document.querySelector('#main6');
+let oMirror6 = document.querySelector('#mirror6');
+let oZoomImg6 = document.querySelector('#mirror6 img');
+
+oMain6.addEventListener('mousemove', e => {
+    let x_left = e.clientX - oMain6.offsetLeft;
+    let y_top = e.clientY - oMain6.offsetTop;
+
+    oMirror6.style.left = x_left - oMirror6.offsetWidth / 2 + 'px';
+    oMirror6.style.top = y_top - oMirror6.offsetHeight * 1.8 + 'px';
+
+    let zoomImgLeft = (oZoomImg.offsetWidth / oMain6.offsetWidth) * (e.clientX - oMain6.getBoundingClientRect().left) - (oMirror6.offsetWidth / 2);
+    let zoomImgTop = (oZoomImg.offsetHeight / oMain6.offsetHeight) * (e.clientY - oMain6.getBoundingClientRect().top) - (oMirror6.offsetHeight / 2);
+
+    oZoomImg6.style.left = -zoomImgLeft * 15 - 320 + 'px';
+    oZoomImg6.style.top = -zoomImgTop * 15 - 100 + 'px';
+});
+
+//7-Las Vegas
+let oMain7 = document.querySelector('#main7');
+let oMirror7 = document.querySelector('#mirror7');
+let oZoomImg7 = document.querySelector('#mirror7 img');
+
+oMain7.addEventListener('mousemove', e => {
+    let x_left = e.clientX - oMain7.offsetLeft;
+    let y_top = e.clientY - oMain7.offsetTop;
+
+    oMirror7.style.left = x_left - oMirror7.offsetWidth / 2 + 'px';
+    oMirror7.style.top = y_top - oMirror7.offsetHeight * 1.8 + 'px';
+
+    let zoomImgLeft = (oZoomImg.offsetWidth / oMain7.offsetWidth) * (e.clientX - oMain7.getBoundingClientRect().left) - (oMirror7.offsetWidth / 2);
+    let zoomImgTop = (oZoomImg.offsetHeight / oMain7.offsetHeight) * (e.clientY - oMain7.getBoundingClientRect().top) - (oMirror7.offsetHeight / 2);
+
+    oZoomImg7.style.left = -zoomImgLeft * 15 - 320 + 'px';
+    oZoomImg7.style.top = -zoomImgTop * 15 - 100 + 'px';
+});
