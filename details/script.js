@@ -214,3 +214,22 @@ oMain8.addEventListener('mousemove', e => {
     oZoomImg8.style.left = -zoomImgLeft * 15 - 320 + 'px';
     oZoomImg8.style.top = -zoomImgTop * 15 - 100 + 'px';
 });
+
+//9-New Zealand
+let oMain9 = document.querySelector('#main9');
+let oMirror9 = document.querySelector('#mirror9');
+let oZoomImg9 = document.querySelector('#mirror9 img');
+
+oMain9.addEventListener('mousemove', e => {
+    let x_left = e.clientX - oMain8.offsetLeft;
+    let y_top = e.clientY - oMain8.offsetTop;
+
+    oMirror9.style.left = x_left - oMirror9.offsetWidth / 2 + 'px';
+    oMirror9.style.top = y_top - oMirror9.offsetHeight * 1.8 + 'px';
+
+    let zoomImgLeft = (oZoomImg.offsetWidth / oMain9.offsetWidth) * (e.clientX - oMain9.getBoundingClientRect().left) - (oMirror9.offsetWidth / 2);
+    let zoomImgTop = (oZoomImg.offsetHeight / oMain9.offsetHeight) * (e.clientY - oMain9.getBoundingClientRect().top) - (oMirror9.offsetHeight / 2);
+
+    oZoomImg9.style.left = -zoomImgLeft * 15 - 320 + 'px';
+    oZoomImg9.style.top = -zoomImgTop * 15 - 100 + 'px';
+});

@@ -30,6 +30,8 @@
     --lasvegas-f: #dadce9;
     --melbourne-b: #152a65;
     --melbourne-f: #c7c1c7;
+    --newzealand-b: #cb8b46;
+    --newzealand-f: #c4ce97;
 }
 
 html {
@@ -87,6 +89,10 @@ body {
 
 #melbourne {
     background-color: var(--melbourne-b);
+}
+
+#newzealand {
+    background-color: var(--newzealand-b);
 }
 
 .header {
@@ -187,6 +193,10 @@ h1 {
     background-color: var(--melbourne-f);
 }
 
+#main9, #mirror9 img {
+    background-color: var(--newzealand-f);
+}
+
 .main img {
     display: block;
     height: auto;
@@ -229,11 +239,20 @@ sup {
     font-feature-settings: "numr";
 }
 
-p, span {
+p, span, li {
     font-family: "Repro-Regular";
     font-size: 0.7rem;
     line-height: 1rem;
+
+}
+
+p {
     margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
 .bold {
