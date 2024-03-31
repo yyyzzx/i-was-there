@@ -38,7 +38,7 @@ function scrollToPage(pageIndex){
 function scrollTimer(){
     setTimeout(() => {
         pageScroll=true;
-    }, 900);
+    }, 600);
 }
 // 鼠标滚轮事件
 function mouseWheel(e){
@@ -232,4 +232,23 @@ oMain9.addEventListener('mousemove', e => {
 
     oZoomImg9.style.left = -zoomImgLeft * 15 - 320 + 'px';
     oZoomImg9.style.top = -zoomImgTop * 15 - 100 + 'px';
+});
+
+//10-Paris
+let oMain10 = document.querySelector('#main10');
+let oMirror10 = document.querySelector('#mirror10');
+let oZoomImg10 = document.querySelector('#mirror10 img');
+
+oMain10.addEventListener('mousemove', e => {
+    let x_left = e.clientX - oMain10.offsetLeft;
+    let y_top = e.clientY - oMain10.offsetTop;
+
+    oMirror10.style.left = x_left - oMirror10.offsetWidth / 2 + 'px';
+    oMirror10.style.top = y_top - oMirror10.offsetHeight * 1.8 + 'px';
+
+    let zoomImgLeft = (oZoomImg.offsetWidth / oMain10.offsetWidth) * (e.clientX - oMain10.getBoundingClientRect().left) - (oMirror10.offsetWidth / 2);
+    let zoomImgTop = (oZoomImg.offsetHeight / oMain10.offsetHeight) * (e.clientY - oMain10.getBoundingClientRect().top) - (oMirror10.offsetHeight / 2);
+
+    oZoomImg10.style.left = -zoomImgLeft * 15 - 320 + 'px';
+    oZoomImg10.style.top = -zoomImgTop * 15 - 100 + 'px';
 });

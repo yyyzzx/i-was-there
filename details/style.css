@@ -32,6 +32,8 @@
     --melbourne-f: #c7c1c7;
     --newzealand-b: #cb8b46;
     --newzealand-f: #c4ce97;
+    --paris-b: tan;
+    --paris-f: ivory;
 }
 
 html {
@@ -93,6 +95,18 @@ body {
 
 #newzealand {
     background-color: var(--newzealand-b);
+}
+
+#paris {
+    background-color: var(--paris-b);
+}
+
+#singapore{
+    background-color: var(--singapore-b);
+}
+
+#tibet {
+    background-color: var(--tibet-b);
 }
 
 .header {
@@ -195,6 +209,18 @@ h1 {
 
 #main9, #mirror9 img {
     background-color: var(--newzealand-f);
+}
+
+#main10, #mirror10 img {
+    background-color: var(--paris-f);
+}
+
+#main11, #mirror11 img {
+    background-color: var(--singapore-f);
+}
+
+#main12, #mirror12 img {
+    background-color: var(--tibet-f);
 }
 
 .main img {
