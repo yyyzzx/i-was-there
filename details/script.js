@@ -252,3 +252,22 @@ oMain10.addEventListener('mousemove', e => {
     oZoomImg10.style.left = -zoomImgLeft * 15 - 320 + 'px';
     oZoomImg10.style.top = -zoomImgTop * 15 - 100 + 'px';
 });
+
+//11-Singapore
+let oMain11 = document.querySelector('#main11');
+let oMirror11 = document.querySelector('#mirror11');
+let oZoomImg11 = document.querySelector('#mirror11 img');
+
+oMain11.addEventListener('mousemove', e => {
+    let x_left = e.clientX - oMain11.offsetLeft;
+    let y_top = e.clientY - oMain11.offsetTop;
+
+    oMirror11.style.left = x_left - oMirror11.offsetWidth / 2 + 'px';
+    oMirror11.style.top = y_top - oMirror11.offsetHeight * 1.8 + 'px';
+
+    let zoomImgLeft = (oZoomImg.offsetWidth / oMain.offsetWidth) * (e.clientX - oMain11.getBoundingClientRect().left) - (oMirror11.offsetWidth / 2);
+    let zoomImgTop = (oZoomImg.offsetHeight / oMain.offsetHeight) * (e.clientY - oMain11.getBoundingClientRect().top) - (oMirror11.offsetHeight / 2);
+
+    oZoomImg11.style.left = -zoomImgLeft * 15 - 300 + 'px';
+    oZoomImg11.style.top = -zoomImgTop * 15 - 100 + 'px';
+});
