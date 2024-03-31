@@ -15,16 +15,30 @@
 
 :root {
     --box: 38px;
+    --alaska-b: CadetBlue;
     --alaska-f: Gainsboro;
+    --chamonix-b: #a7ce59;
     --chamonix-f: #eff2d1;
+    --holland-b: #fd5c22;
     --holland-f: #efddcd;
+    --houtong-b: #813d2e;
     --houtong-f: rgb(245, 242, 228);
+    --iceland-b: rgb(199, 126, 153);
     --iceland-f: mistyrose;
+    --japan-b: brown;
     --japan-f: whitesmoke;
+    --lasvegas-b: rgb(40, 40, 149);
     --lasvegas-f: #dadce9;
+    --melbourne-b: #152a65;
     --melbourne-f: #c7c1c7;
+    --newzealand-b: #cb8b46;
     --newzealand-f: #c4ce97;
+    --paris-b: tan;
+    --paris-f: ivory;
+    --singapore-b:#d95177;
     --singapore-f: rgb(194, 210, 230);
+    --tibet-b: #2a5662;
+    --tibet-f: #b2c9d3;
 }
 
 html {
@@ -181,7 +195,7 @@ p {
 }
 
 .alaska:hover{
-    background-color: var(--alaska-f);
+    background-color: var(--alaska-b);
 }
 
 .box-chamonix {
@@ -199,7 +213,7 @@ p {
 }
 
 .chamonix:hover {
-    background-color: var(--chamonix-f);
+    background-color: var(--chamonix-b);
 }
 
 .box-holland {
@@ -213,7 +227,7 @@ p {
 }
 
 .holland:hover {
-    background-color: var(--holland-f);
+    background-color: var(--holland-b);
 }
 
 .box-htstation {
@@ -231,7 +245,7 @@ p {
 }
 
 .htstation:hover {
-    background-color: var(--houtong-f);
+    background-color: var(--houtong-b);
 }
 
 .box-iceland {
@@ -249,7 +263,7 @@ p {
 }
 
 .iceland:hover {
-    background-color: var(--iceland-f);
+    background-color: var(--iceland-b);
 }
 
 .box-japan {
@@ -267,7 +281,7 @@ p {
 }
 
 .japan:hover {
-    background-color: var(--japan-f);
+    background-color: var(--japan-b);
 }
 
 .box-lasvegas {
@@ -285,7 +299,7 @@ p {
 }
 
 .lasvegas:hover {
-    background-color: var(--lasvegas-f);
+    background-color: var(--lasvegas-b);
 }
 
 .box-melbourne {
@@ -303,7 +317,7 @@ p {
 }
 
 .melbourne:hover {
-    background-color: var(--melbourne-f);
+    background-color: var(--melbourne-b);
 }
 
 .box-newzeland {
@@ -321,7 +335,7 @@ p {
 }
 
 .newzeland:hover {
-    background-color: var(--newzealand-f);
+    background-color: var(--newzealand-b);
 }
 
 .box-paris {
@@ -338,6 +352,10 @@ p {
     width: calc(var(--box) * 7.4 - var(--box));
 }
 
+.paris:hover {
+    background-color: var(--paris-b);
+}
+
 .box-singapore {
     width: calc(var(--box) * 6 + 40px);
     height: calc(120px + 60px + (var(--box) * 6));
@@ -352,6 +370,10 @@ p {
     width: calc(var(--box) * 6 - var(--box));
 }
 
+.singapore:hover {
+    background-color: var(--singapore-b);
+}
+
 .box-tibet {
     width: calc(var(--box) * 7 + 40px);
     height: calc(120px + 60px + (var(--box) * 5.3));
@@ -364,4 +386,8 @@ p {
 
 .tibet img{
     width: calc(var(--box) * 7 - var(--box));
+}
+
+.tibet:hover {
+    background-color: var(--tibet-b);
 }

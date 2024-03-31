@@ -265,9 +265,28 @@ oMain11.addEventListener('mousemove', e => {
     oMirror11.style.left = x_left - oMirror11.offsetWidth / 2 + 'px';
     oMirror11.style.top = y_top - oMirror11.offsetHeight * 1.8 + 'px';
 
-    let zoomImgLeft = (oZoomImg.offsetWidth / oMain.offsetWidth) * (e.clientX - oMain11.getBoundingClientRect().left) - (oMirror11.offsetWidth / 2);
-    let zoomImgTop = (oZoomImg.offsetHeight / oMain.offsetHeight) * (e.clientY - oMain11.getBoundingClientRect().top) - (oMirror11.offsetHeight / 2);
+    let zoomImgLeft = (oZoomImg.offsetWidth / oMain11.offsetWidth) * (e.clientX - oMain11.getBoundingClientRect().left) - (oMirror11.offsetWidth / 2);
+    let zoomImgTop = (oZoomImg.offsetHeight / oMain11.offsetHeight) * (e.clientY - oMain11.getBoundingClientRect().top) - (oMirror11.offsetHeight / 2);
 
     oZoomImg11.style.left = -zoomImgLeft * 15 - 300 + 'px';
     oZoomImg11.style.top = -zoomImgTop * 15 - 100 + 'px';
+});
+
+//12-Tibet
+let oMain12 = document.querySelector('#main12');
+let oMirror12 = document.querySelector('#mirror12');
+let oZoomImg12 = document.querySelector('#mirror12 img');
+
+oMain12.addEventListener('mousemove', e => {
+    let x_left = e.clientX - oMain12.offsetLeft;
+    let y_top = e.clientY - oMain12.offsetTop;
+
+    oMirror12.style.left = x_left - oMirror12.offsetWidth / 2 + 'px';
+    oMirror12.style.top = y_top - oMirror12.offsetHeight * 1.8 + 'px';
+
+    let zoomImgLeft = (oZoomImg.offsetWidth / oMain12.offsetWidth) * (e.clientX - oMain12.getBoundingClientRect().left) - (oMirror12.offsetWidth / 2);
+    let zoomImgTop = (oZoomImg.offsetHeight / oMain12.offsetHeight) * (e.clientY - oMain12.getBoundingClientRect().top) - (oMirror12.offsetHeight / 2);
+
+    oZoomImg12.style.left = -zoomImgLeft * 15 - 300 + 'px';
+    oZoomImg12.style.top = -zoomImgTop * 15 - 100 + 'px';
 });
