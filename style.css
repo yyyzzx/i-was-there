@@ -391,3 +391,90 @@ p {
 .tibet:hover {
     background-color: var(--tibet-b);
 }
+
+@media only screen and (min-width: 1800px) {
+    :root {
+        --box: 60px;
+    }
+
+    html {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-device-width: 920px) {
+    :root {
+        --box: 32px;
+    }
+}
+
+@media only screen and (max-device-width: 780px) {
+    :root {
+        --box: 25px;
+    }
+}
+
+@media only screen and (max-device-width: 630px) {
+    :root {
+        --box: 35px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 2.5vw 3.5vw 2vh 5vw;
+        gap: 3vw 3vw;
+        z-index: 1;
+    }
+
+    h2 {
+        font-family: "GT-Flexa";
+        font-size: clamp(0.6rem, 1.5vw, 1.7rem);
+        line-height: 1rem;
+        margin:  0 5vw;
+        position: relative;
+        margin-top: 30vw;
+    }
+
+    header {
+        background-image: linear-gradient(ghostwhite, rgba(0,0,0,0));
+        z-index: 2;
+        position: fixed;
+        width: 100vw;
+        height: 22vw;
+        top:0;
+    }
+    
+    h1 {
+        font-family: "GT-Flexa";
+        font-size: clamp(3.4rem, 10vw, 8rem);
+        line-height: 13vw;
+        margin-left: 5vw;
+        position: relative;
+        top: 2vw;
+    }
+}
+
+@media only screen and (max-device-width: 450px) {
+    :root {
+        --box: 30px;
+    }
+
+    html {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-device-width: 400px) {
+    :root {
+        --box: 20px;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+}
