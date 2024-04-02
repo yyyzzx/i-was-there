@@ -15,29 +15,29 @@
 
 :root {
     --box: 38px;
-    --alaska-b: CadetBlue;
+    --alaska-b: rgba(95, 158, 160, 0.7);
     --alaska-f: Gainsboro;
-    --chamonix-b: #a7ce59;
+    --chamonix-b: #a7ce59b0;
     --chamonix-f: #eff2d1;
-    --holland-b: #fd5c22;
+    --holland-b: #fd5c22b0;
     --holland-f: #efddcd;
-    --houtong-b: #813d2e;
+    --houtong-b: #813d2eb0;
     --houtong-f: rgb(245, 242, 228);
-    --iceland-b: rgb(199, 126, 153);
+    --iceland-b: rgba(199, 126, 153, 0.7);
     --iceland-f: mistyrose;
-    --japan-b: brown;
+    --japan-b: rgba(165, 42, 42, 0.7);
     --japan-f: whitesmoke;
-    --lasvegas-b: rgb(40, 40, 149);
+    --lasvegas-b: rgba(40, 40, 149, 0.7);
     --lasvegas-f: #dadce9;
-    --melbourne-b: #152a65;
+    --melbourne-b: #203367b0;
     --melbourne-f: #c7c1c7;
-    --newzealand-b: #cb8b46;
+    --newzealand-b: #cb8b46b0;
     --newzealand-f: #c4ce97;
-    --paris-b: tan;
+    --paris-b: rgba(210, 180, 140, 0.7);
     --paris-f: ivory;
-    --singapore-b:#d95177;
+    --singapore-b:#d95177b0;
     --singapore-f: rgb(194, 210, 230);
-    --tibet-b: #2a5662;
+    --tibet-b: #2a5662b0;
     --tibet-f: #b2c9d3;
 }
 
