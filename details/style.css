@@ -323,7 +323,7 @@ a:hover::after{
     transform-origin: left;
 }
 
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 2500px) {
     p, span, li, ul, .bold {
         font-size: 1.2rem;
         margin: 0;
