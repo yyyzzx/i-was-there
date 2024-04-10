@@ -273,7 +273,20 @@ p, span, li {
     font-family: "Repro-Regular";
     font-size: 0.7rem;
     line-height: 1rem;
+}
 
+#lasvegas .text,
+#lasvegas h1,
+#lasvegas .nav,
+#lasvegas .h2 {
+    color: var(--lasvegas-f);
+}
+
+#melbourne .text,
+#melbourne h1,
+#melbourne .nav,
+#melbourne .h2 {
+    color: var(--melbourne-f);
 }
 
 p {
